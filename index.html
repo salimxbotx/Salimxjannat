@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Salim ♡ Jannat</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Hind+Siliguri:wght@500;700;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg1:#ffe1f4;--bg2:#ead8ff;--bg3:#ffd1dc;
+  --main:#a855f7;--dark:#6b21a8;--pink:#ff4fc3;
+  --card:rgba(255,255,255,.62);--soft:rgba(255,255,255,.55);
+  --text:#5b167d;--border:rgba(255,255,255,.65);
+}
+body.night{--bg1:#120821;--bg2:#25103d;--bg3:#4c1d95;--main:#e9d5ff;--dark:#fff;--pink:#ff7adf;--card:rgba(255,255,255,.12);--soft:rgba(255,255,255,.10);--text:#fff}
+body.rose{--bg1:#ffe4ef;--bg2:#ffc2dd;--bg3:#ffd6c9;--main:#db2777;--dark:#9d174d;--pink:#ff2f92;--text:#831843}
+body.ocean{--bg1:#dff8ff;--bg2:#c7ddff;--bg3:#e8d7ff;--main:#2563eb;--dark:#1e3a8a;--pink:#7c3aed;--text:#1e40af}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  min-height:100vh;
+  font-family:"Hind Siliguri",sans-serif;
+  background:
+    radial-gradient(circle at 20% 15%,rgba(255,255,255,.9),transparent 22%),
+    radial-gradient(circle at 80% 20%,rgba(255,79,195,.25),transparent 28%),
+    linear-gradient(-45deg,var(--bg1),var(--bg2),var(--bg3),#fff0fa);
+  background-size:220% 220%;
+  animation:bg 12s ease infinite;
+  display:flex;justify-content:center;align-items:center;
+  padding:14px;overflow-x:hidden;
+}
+@keyframes bg{50%{background-position:100% 50%}}
+
+.card{
+  width:100%;max-width:520px;
+  background:var(--card);
+  backdrop-filter:blur(24px) saturate(155%);
+  -webkit-backdrop-filter:blur(24px) saturate(155%);
+  border-radius:36px;
+  padding:25px 18px;
+  box-shadow:0 28px 80px rgba(123,31,162,.22);
+  border:2px solid var(--border);
+  overflow:hidden;position:relative;
+}
+h1{
+  font-family:"Kalam",cursive;
+  font-size:54px;text-align:center;color:var(--dark);
+  text-shadow:0 4px 18px rgba(255,255,255,.7);
+}
+.subtitle{text-align:center;color:var(--main);font-size:23px;font-weight:900;margin-bottom:15px}
+.theme-row{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;margin-bottom:16px}
+.theme-btn{
+  border:1px solid rgba(255,255,255,.7);
+  padding:9px 14px;border-radius:999px;
+  background:rgba(255,255,255,.72);
+  color:var(--text);font-weight:900;cursor:pointer;
+}
+.note,.box{
+  background:linear-gradient(135deg,rgba(255,255,255,.82),var(--soft));
+  border-radius:25px;padding:16px 14px;margin:13px 0;
+  text-align:center;color:var(--text);font-size:18px;font-weight:800;
+  box-shadow:0 12px 28px rgba(155,89,182,.14);
+  border:1px solid rgba(255,255,255,.58);
+}
+.title{color:var(--main);font-size:17px;font-weight:900;margin-bottom:10px}
+.start{font-size:19px;font-weight:900;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}
+.item{background:rgba(255,255,255,.58);border-radius:18px;padding:10px 4px}
+.item b{display:block;font-size:25px;color:var(--dark)}
+.item span{color:var(--main);font-size:12px;font-weight:900}
+
+.tapBtn{
+  width:105px;height:105px;border-radius:50%;border:0;
+  font-size:48px;color:white;
+  background:linear-gradient(135deg,#ff9eed,var(--pink),var(--main));
+  box-shadow:0 15px 40px rgba(255,79,195,.48);
+  cursor:pointer;animation:beat 1.35s infinite;
+}
+@keyframes beat{50%{transform:scale(1.07)}}
+.counter{margin-top:12px;font-size:22px;font-weight:900;color:var(--main)}
+.counter span{color:var(--pink);font-size:34px}
+
+.btn{
+  border:0;padding:12px 22px;border-radius:999px;
+  background:linear-gradient(135deg,var(--main),var(--pink));
+  color:white;font-size:16px;font-weight:900;cursor:pointer;
+}
+.letter{
+  display:none;margin-top:14px;background:rgba(255,255,255,.78);
+  padding:16px;border-radius:22px;color:var(--text);
+  line-height:1.8;font-weight:800;
+}
+footer{text-align:center;margin-top:22px;font-size:18px;font-weight:900;color:var(--main)}
+footer span{color:var(--dark)}
+.fly,.float{position:fixed;pointer-events:none;z-index:99}
+.fly{animation:fly 2.2s ease-out forwards}
+.float{bottom:-25px;animation:float 7s linear forwards;z-index:1}
+@keyframes fly{to{transform:translateY(-115vh) rotate(360deg) scale(1.45);opacity:0}}
+@keyframes float{to{transform:translateY(-105vh) rotate(300deg);opacity:0}}
+
+@media(max-width:430px){
+  h1{font-size:44px}
+  .subtitle{font-size:21px}
+  .note{font-size:17px}
+  .item b{font-size:22px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h1>Jannat ♡</h1>
+  <div class="subtitle">আমার পুকি বেবি 🧸💕</div>
+
+  <div class="theme-row">
+    <button class="theme-btn" onclick="setTheme('')">🌸 Pink</button>
+    <button class="theme-btn" onclick="setTheme('night')">🌙 Night</button>
+    <button class="theme-btn" onclick="setTheme('rose')">🌹 Rose</button>
+    <button class="theme-btn" onclick="setTheme('ocean')">💎 Ocean</button>
+  </div>
+
+  <div class="note" id="msg">💖 তুমি আমার পৃথিবীর সবচেয়ে সুন্দর অনুভূতি।</div>
+  <div class="note">🌙 Jannat — আমার শান্তির ঠিকানা ✨</div>
+  <div class="note">🌸 তোমার হাসিটাই আমার দিনের আলো ♡</div>
+
+  <div class="box">
+    <div class="title">আমাদের প্রথম কথা হয়েছিলো ♡</div>
+    <div class="start">১১ অক্টোবর ২০২৫<br>সকাল ৯:৩০ মিনিটে</div>
+
+    <div class="title" style="margin-top:14px">তোমাকে ভালোবাসি আজ পর্যন্ত ⏱️</div>
+    <div class="grid">
+      <div class="item"><b id="d">0</b><span>দিন</span></div>
+      <div class="item"><b id="h">0</b><span>ঘণ্টা</span></div>
+      <div class="item"><b id="m">0</b><span>মিনিট</span></div>
+      <div class="item"><b id="s">0</b><span>সেকেন্ড</span></div>
+    </div>
+  </div>
+
+  <div class="box">
+    <button class="tapBtn" id="kissBtn">😘</button>
+    <div class="counter">আমাদের মোট Kiss: <span id="kissCount">0</span> টা</div>
+    <div style="font-size:13px;color:var(--main);margin-top:6px;font-weight:900">
+      Live Firebase Counter
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="title">Live Clock 🕒</div>
+    <div id="clock" style="font-size:30px;font-weight:900;color:var(--dark)"></div>
+    <div id="date" style="color:var(--main);font-weight:800;margin-top:5px"></div>
+  </div>
+
+  <div class="box">
+    <button class="btn" onclick="toggleLetter()">💌 Read My Letter</button>
+    <div class="letter" id="letter">
+      Jannat, তুমি আমার জীবনের সবচেয়ে সুন্দর অধ্যায়।  
+      তোমার হাসি, তোমার কথা, তোমার ছোট ছোট অভিমান—সবকিছুই আমার কাছে অনেক প্রিয়।  
+      তুমি থাকলেই আমার পৃথিবীটা অনেক সুন্দর লাগে। ♡
+    </div>
+  </div>
+
+  <footer>
+    Made with ∞ Love <br>
+    By <span>Salim</span> For <span>Jannat</span> 🧸💕
+  </footer>
+</div>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+import { getDatabase, ref, onValue, runTransaction } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js";
+
+/* এখানে তোমার Firebase Config বসাও */
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+  databaseURL: "https://YOUR_PROJECT_ID-default-rtdb.firebaseio.com",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_PROJECT_ID.appspot.com",
+  messagingSenderId: "YOUR_SENDER_ID",
+  appId: "YOUR_APP_ID"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+const kissRef = ref(db, "salim-jannat/kissCount");
+
+const firstTalk = new Date("2025-10-11T09:30:00");
+const kissBtn = document.getElementById("kissBtn");
+const kissCount = document.getElementById("kissCount");
+
+function setTheme(theme){
+  document.body.className = theme;
+  localStorage.setItem("salim_jannat_theme", theme);
+}
+window.setTheme = setTheme;
+setTheme(localStorage.getItem("salim_jannat_theme") || "");
+
+function updateTimer(){
+  let diff = new Date() - firstTalk;
+  if(diff < 0) diff = 0;
+
+  const d = Math.floor(diff / 86400000);
+  diff %= 86400000;
+  const h = Math.floor(diff / 3600000);
+  diff %= 3600000;
+  const m = Math.floor(diff / 60000);
+  diff %= 60000;
+  const s = Math.floor(diff / 1000);
+
+  document.getElementById("d").textContent = d;
+  document.getElementById("h").textContent = h;
+  document.getElementById("m").textContent = m;
+  document.getElementById("s").textContent = s;
+}
+
+function updateClock(){
+  const now = new Date();
+  document.getElementById("clock").textContent = now.toLocaleTimeString("bn-BD");
+  document.getElementById("date").textContent = now.toLocaleDateString("bn-BD",{
+    weekday:"long",year:"numeric",month:"long",day:"numeric"
+  });
+}
+
+updateTimer();
+updateClock();
+setInterval(updateTimer,1000);
+setInterval(updateClock,1000);
+
+const messages = [
+  "💖 তুমি আমার পৃথিবীর সবচেয়ে সুন্দর অনুভূতি।",
+  "🌸 তোমার হাসিটাই আমার সুখ।",
+  "🧸 Jannat, তুমি আমার শান্তির ঠিকানা।",
+  "🌙 তুমি থাকলেই সবকিছু সুন্দর লাগে।",
+  "💕 Forever You & Me ♡",
+  "✨ তুমি আমার হৃদয়ের সবচেয়ে প্রিয় মানুষ।"
+];
+
+let msgIndex = 0;
+setInterval(()=>{
+  msgIndex = (msgIndex + 1) % messages.length;
+  document.getElementById("msg").textContent = messages[msgIndex];
+},3500);
+
+/* Firebase Live Kiss Count */
+onValue(kissRef, (snapshot)=>{
+  const value = snapshot.val();
+  kissCount.textContent = value || 0;
+});
+
+kissBtn.addEventListener("click",()=>{
+  runTransaction(kissRef, (currentValue)=>{
+    return (currentValue || 0) + 1;
+  });
+
+  if(navigator.vibrate) navigator.vibrate(60);
+
+  for(let i=0;i<14;i++){
+    const e=document.createElement("div");
+    e.className="fly";
+    e.textContent=["😘","💋","💕","💖","🌸","🎀","✨"][Math.floor(Math.random()*7)];
+    e.style.left=Math.random()*100+"vw";
+    e.style.top="82vh";
+    e.style.fontSize=(22+Math.random()*24)+"px";
+    document.body.appendChild(e);
+    setTimeout(()=>e.remove(),2300);
+  }
+});
+
+function toggleLetter(){
+  const letter = document.getElementById("letter");
+  letter.style.display = letter.style.display === "block" ? "none" : "block";
+}
+window.toggleLetter = toggleLetter;
+
+setInterval(()=>{
+  const f=document.createElement("div");
+  f.className="float";
+  f.textContent=["😘","💋","💕","🌸","✨","🎀"][Math.floor(Math.random()*6)];
+  f.style.left=Math.random()*100+"vw";
+  f.style.fontSize=(16+Math.random()*16)+"px";
+  f.style.opacity=.65;
+  document.body.appendChild(f);
+  setTimeout(()=>f.remove(),7000);
+},1400);
+</script>
+
+</body>
+</html>
